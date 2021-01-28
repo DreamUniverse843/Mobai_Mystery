@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ 	<html>
+ 	<head>
+ 	<meta charset="UTF-8">
+ 	<title>Mobai's Mysteries - Q10</title>
+ 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+ 	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+ 	<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+ 	<script src="http://rovertang.com/labs/useragent/useragents.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/base64.js"></script>
+ 	</head>
+ 	 
+ 	<body>
+ 	<script>
+ 	//alert(navigator.userAgent);
+ 	Browsers = new UserAgents(navigator.userAgent);
+		if(Browsers.browser.name!="MobaiExplorer")
+			{
+				alert('啊哈？真正的秘密只有墨白的浏览器才能看到！')
+			}
+		else
+		{
+			var b = new Base64();  
+			var txt="Resolution Path:"+'<br />'+b.decode("aHR0cHM6Ly9tb2JhaS5uZXRsaWZ5LmFwcC90b2tlbi9VMmhwVFc5Q1lXa2djWFZsYzNScGIyNHhNQT09Lmh0bWw=");
+			window.document.write(txt);
+		}
+ 	</script>
+ 	<br><br><br><br>
+ 	</body>
+ 	</html>
