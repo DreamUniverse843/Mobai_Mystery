@@ -15,19 +15,21 @@
 <body>
     <div class="panel">
         <div class="btn-container">
-			<h1><font color=#FFFFFF>Authentication required!</font></h1>
+			<h1><font color="#FFFFFF">Authentication required!</font></h1>
             <input id="inputbox" type="text" placeholder="验证码">
             <div class="btn">验证</div>
             <div id="img" style="display: none;">
-                <img src="https://i.loli.net/2021/01/29/WQsxOl1Ik28y6nb.png">
+                <img src="https://i.loli.net/2021/01/29/WQsxOl1Ik28y6nb.png" alt="">
             </div>
         </div>
     </div>
     <script>
+		var b = new Base64();
+		var txt = b.decode("c2hpMm1vMGJhaTJ5YTE=");
         $(document).ready(function () {
             $('.btn').on('click', function () {
                 var intext = $('#inputbox').val();
-                if (intext == 'scan') {
+                if (intext == txt) {
 					alert('验证码正确！');
                     if (img.style.display == 'none') {
                         img.style.display = '';
