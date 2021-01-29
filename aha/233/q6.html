@@ -26,7 +26,8 @@
         $(document).ready(function () {
             $('.btn').on('click', function () {
                 var intext = $('#inputbox').val();
-                if (intext == 'SCAN') {
+                if (intext == 'scan') {
+					alert('验证码正确！');
                     if (img.style.display == 'none') {
                         img.style.display = '';
                     }
