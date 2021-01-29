@@ -17,7 +17,8 @@
 			{
 				$(document).ready(function(){
 					$("btn").click(function(){
-						if(text=="SCAN")
+						var intext=$('inputbox').value();
+						if(intext=="SCAN")
 							{
 								if(img.style.display=='none')
 									{img.style.display='';}
@@ -29,7 +30,7 @@
 			</script>
   <div class="panel">
     <div class="btn-container">
-      <input type="text" placeholder="验证码" >
+      <input id="inputbox" type="text" placeholder="验证码" >
       <div class="btn" onClick="Verify">验证</div>
 		<div id="img" style="display:none">
 			<img src="https://i.loli.net/2021/01/29/WQsxOl1Ik28y6nb.png">
